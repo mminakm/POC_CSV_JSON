@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<mappings xmlns="http://dozermapper.github.io/schema/bean-mapping" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://dozermapper.github.io/schema/bean-mapping https://dozermapper.github.io/schema/bean-mapping.xsd">
+    <configuration>
+        <wildcard>false</wildcard>
+    </configuration>
+    <mapping>
+        <class-a>com.oup.integration.sps.acad.us.starstatus.star.pojo.StarStatusStarUS</class-a>
+        <class-b>com.oup.integration.sps.acad.us.starstatus.biblio.pojo.StarStatusBiblioUS</class-b>
+        <field>
+            <a>productISBN</a>
+            <b>productISBN</b>
+        </field>
+        <field>
+            <a>PDMMainDate</a>
+            <b>PDMMainDate</b>
+        </field>
+    </mapping>
+</mappings>

@@ -1,0 +1,90 @@
+spring:
+  application:
+    name: STAR-STATUS
+  activemq:
+    broker-url: tcp://localhost:61616
+    user: admin
+    password: admin  
+      
+server:
+  port: 8080  
+eureka:
+  client:
+    enabled: false
+    
+activemq:
+    us:
+      queuename: queue:STAR-STATUS-DEV
+
+
+file:
+  backup:
+    location: D:\\JavaTest\\SPS\\Backup\\   
+       
+ftp:
+  us: 
+    server: localhost
+    port: 21
+    username: ftpuser
+    password: ftpuser
+    drop:
+      location: /R2Q400/ABC/OUT
+      
+management:
+  security:
+    enabled: false
+  metrics:
+    export:
+      prometheus: 
+        enabled: true
+    distribution:
+      percentiles[http.server.requests]: 0.95, 0.99
+      percentiles-histogram[http.server.requests]: true
+      sla[http.server.requests]: 10ms, 100ms
+
+---
+spring:
+  profiles: dev
+
+  activemq:
+    broker-url: tcp://localhost:61616
+    user: admin
+    password: admin  
+      
+server:
+  port: 8080  
+eureka:
+  client:
+    enabled: false
+    
+activemq:
+    us:
+      queuename: queue:STAR-STATUS-DEV
+
+
+file:
+  backup:
+    location: D:\\JavaTest\\SPS\\Backup\\   
+       
+ftp:
+  us: 
+    server: localhost
+    port: 21
+    username: ftpuser
+    password: ftpuser
+    drop:
+      location: /R2Q400/ABC/OUT
+      
+management:
+  security:
+    enabled: false
+  metrics:
+    export:
+      prometheus: 
+        enabled: true
+    distribution:
+      percentiles[http.server.requests]: 0.95, 0.99
+      percentiles-histogram[http.server.requests]: true
+      sla[http.server.requests]: 10ms, 100ms
+
+      

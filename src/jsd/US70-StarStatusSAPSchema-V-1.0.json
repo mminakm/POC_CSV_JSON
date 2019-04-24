@@ -1,0 +1,29 @@
+{
+	"$schema": "http://json-schema.org/draft-06/schema#",
+	"title": "Star Status US70 Biblio",
+	"description": "Biblio for Star Status US70",
+	"type": "object",
+	"properties": {
+		"productISBN": {
+			"$id": "/properties/productISBN",
+			"type": "string",
+			"description": "SAP Field-->EAN",
+			"default": "",
+			"examples": ["9780191798009"]
+		},
+		"hardCodedValue": {
+			"$id": "/properties/hardCodedValue",
+			"type": "string",
+			"description": "SAP Field-->Hard Coded Value",
+			"default": "",
+			"examples": ["Y"]
+		},
+		"PDMMainDate": {
+			"$id": "/properties/PDMMainDate",
+			"type": "string",
+			"description": "SAP Field-->CSTMP subfield D",
+			"default": "",
+			"examples": ["20140818"]
+		}
+	}
+}
